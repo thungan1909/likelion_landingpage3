@@ -67,10 +67,6 @@ header h1 {
 }
 
  /* Blog */
-/* 
-.blog__titleDesc{}
-    font-size: 18px;
- } */
 
 
 .comments h4{
@@ -82,39 +78,26 @@ header h1 {
     font-size: 15px;
 }
 
-
-/* About */
-
-.about .content {
-   padding: 0.15px 16px;
-   color: #FFF;
-   background-color: #000;
+aside .sidebar-items img {
+   width: 100%;
 }
-.about .name {
-   margin: 10px 0px;
-
-}
-.about p {
-   margin: 15px 0px;
+aside .sidebar-items ul li p {
+   margin: 0;
 }
 
-
-.advertise-body{
+aside .advertise-body{
    height: 200px;
-   background-color: #FFF;
 }
-.advertise-content{
+aside .advertise-content{
   background-color: #f1f1f1;
   width: 100%;
 }
 
-.tag__content span+span {
-   background-color: #f1f1f1;
-   font-size: 12px;
-}
-
-.followMe__content i {
+aside .followMe__content i {
    font-size: 21px;
    cursor: pointer;
+}
 
+aside .subscribe__content p{
+   margin-top: 0;
 }

@@ -15,64 +15,64 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar bg-dark text-center">
+    <nav class="navbar bg-dark text-center d-none d-sm-flex">
         <ul class="d-flex gap-3 ">
             <li>
                 <button class="btn btn-outline-secondary ">
                      <a href="#" class="text-light">
-                        <i class="col fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-facebook"></i>
                     </a>
                 </button>
             </li>
             <li>
                 <button class="btn btn-outline-secondary">
                     <a href="#" class="text-light">
-                        <i class="col fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                 </button>
             </li>
             <li>
                 <button class="btn btn-outline-secondary">
                     <a href="#" class="text-light">
-                        <i class="col fa-brands fa-snapchat"></i>
+                        <i class="fa-brands fa-snapchat"></i>
                     </a>
                 </button>
             </li>
             <li>
                 <button class="btn btn-outline-secondary">
                     <a href="#" class="text-light">
-                        <i class="col fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-pinterest"></i>
                     </a>
                 </button>
             </li>
             <li>
                 <button class="btn btn-outline-secondary" >
                     <a href="#" class="text-light">
-                        <i class="col fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-twitter"></i>
                     </a>
                 </button>
             </li>
             <li>
                 <button class="btn btn-outline-secondary">
                     <a href="#" class="text-light">
-                        <i class="col fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </button>
             </li>
         </ul>     
-            <div class="search ">
-                <buton class="btn btn-outline-secondary text-light">
-                    <i class="fa-solid fa-magnifying-glass" ></i>
-                </buton>
-            </div>
+        <div class="search ">
+            <buton class="btn btn-outline-secondary text-light">
+                <i class="fa-solid fa-magnifying-glass" ></i>
+            </buton>
+        </div>
     </nav>
 
     <!-- Header -->
     <div id="header" class="text-center py-5 px-3">
-        <h1 class="py-3 fw-bold">JANE BLOGLIFE</h1>
+        <h1 class="fw-bold">JANE BLOGLIFE</h1>
         <h6 class="my-3">
             Welcome to the blog of 
-            <span class="bg-dark text-white p-1">
+            <span class="bg-dark text-light px-2 py-1">
                 Jane's world
             </span>
         </h6>
@@ -82,258 +82,291 @@
     <div id="hero" class="position-relative">
         <img class="img-fluid" src="./assets/img/jane.jpg">
         <div class="position-absolute hero-content">
-            <h2 class="my-2">Jane's</h2>
-            <p class="my-3 text-uppercase" > FASHION BLOG</p>
-            <button class="btn btn-secondary opacity-75 text-uppercase" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe</button>
+            <h2 class="fw-normal">Jane's</h2>
+            <p class="my-3 text-uppercase fw-bold d-none d-sm-block" > FASHION BLOG</p>
+            <button class="btn btn-secondary opacity-75 text-uppercase" type="button"  data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</button>
         </div>
     </div>  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title text-uppercase" id="exampleModalLabel">Subscribe</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title text-uppercase" id="exampleModalLabel">Subscribe</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="my-3">Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                <input class="p-2 container-fluid" type="email" placeholder="Enter e-mail" >
+                <button class="bg-danger text-white text-center container-fluid my-2 ">Subscribe</button>
+            </div>
         </div>
-        <div class="modal-body">
-            <p class="my-3">Join my mailing list to receive updates on the latest blog posts and other things.</p>
-            <input class="p-2 container-fluid" type="email" placeholder="Enter e-mail" >
-            <button class="bg-danger text-white text-center container-fluid my-2 ">Subscribe</button>
         </div>
-      </div>
     </div>
-  </div>
 
-</div>
-     <div class="container-fluid">
-    <div class="row my-3 ">
-        <div class="col-9">
-                <!-- Blog-->
-            <div class="blog bg-light px-4 py-3 m-3">
-                <h3 class="fw-normal my-2 text-center">TITLE HEADING</h3>
-                <h3 class="fw-normal my-2 text-center">Title description, <span class="text-secondary opaction-75"> May 2, 2016</span></h3>
-                <img class="py-3" src="./assets/img/blog/girl_hat.jpg" class="img-fluid py-3" style="width: 100%;">
-                <p class="my-3"><b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                <p class="my-3">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
-                <div class="blog-action d-flex justify-content-between my-3">
-                    <button class="likeBtn btn btn-outline-secondary" >
-                        <i class="fa-solid fa-thumbs-up"></i>
-                        <span>Like</span>
-                    </button>
-                    <button class="reply btn btn-dark">
-                        Replies
-                        <span class="bg-light text-dark">1</span>
-                    </button>
-                </div>
-                <hr class="my-5">
+    <!-- Content -->
+    <div class="container-fluid">
+        <div class="row my-3 ">
+            <div class="col-12 col-lg-8">
+                    <!-- Blog-->
+                <div class="blog bg-light px-3 py-2 m-3">
+                    <h3 class="fw-normal my-2 text-center">TITLE HEADING</h3>
+                    <h3 class="fw-normal my-2 text-center">Title description, <span class="text-secondary opaction-75"> May 2, 2016</span></h3>
+                    <img class="py-3" src="./assets/img/blog/girl_hat.jpg" class="img-fluid py-3" style="width: 100%;" alt="blog-1"> 
+                    <p class="my-3"><b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    <p class="my-3">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
+                    <div class="blog-action d-flex justify-content-between my-3">
+                        <button class="likeBtn btn btn-outline-secondary" >
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </button>
+                        <button class="reply btn btn-dark">
+                            <span class="me-2">Replies</span>
+                            <span class="bg-light text-dark px-2">1</span>
+                        </button>
+                    </div>
+                    <hr class="my-5">
 
-                <div class="comments row">
-                    <div class="col-2">
-                        <img class="img-fluid" src="./assets/img/blog/avatar_smoke.jpg"/>
-                    </div>
-                    <div class="col-4 my-1 ">
-                        <h4>George<span class="text-secondary">May 3, 2015, 6:32 PM</span></h4>
-                        <p>Great blog post! Following</p>
-                    </div>
-                </div>
-            </div>
-            <div class="blog bg-light px-4 py-3 m-3">
-                <h3 class="fw-normal my-2 text-center">TITLE HEADING</h3>
-                <h3 class="fw-normal my-2 text-center">Title description, <span class="text-secondary opaction-75"> May 2, 2016</span></h3>
-                <img class="py-3" src="./assets/img/blog/girl_hat.jpg" class="img-fluid py-3" style="width: 100%;">
-                <p class="my-3"><b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                <p class="my-3">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
-                <div class="blog-action d-flex justify-content-between my-3">
-                    <button class="likeBtn btn btn-outline-secondary">
-                        <i class="fa-solid fa-thumbs-up"></i>
-                        <span>Like</span>
-                    </button>
-                    <button class="reply btn btn-dark">
-                        Replies
-                        <span class="bg-light text-dark">1</span>
-                    </button>
-                </div>
-                <hr class="my-5">
-
-                <div class="comments row">
-                    <div class="col-2">
-                        <img class="img-fluid" src="./assets/img/blog/avatar_smoke.jpg"/>
-                    </div>
-                    <div class="col-4 my-1 ">
-                        <h4>George<span class="text-secondary">May 3, 2015, 6:32 PM</span></h4>
-                        <p>Great blog post! Following</p>
-                    </div>
-                </div>
-            </div>
-            <div class="blog bg-light px-4 py-3 m-3">
-                <h3 class="fw-normal my-2 text-center">TITLE HEADING</h3>
-                <h3 class="fw-normal my-2 text-center">Title description, <span class="text-secondary opaction-75"> May 2, 2016</span></h3>
-                <img class="py-3" src="./assets/img/blog/girl_hat.jpg" class="img-fluid py-3" style="width: 100%;">
-                <p class="my-3"><b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                <p class="my-3">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
-                <div class="blog-action d-flex justify-content-between my-3">
-                    <button class="likeBtn btn btn-outline-secondary">
-                        <i class="fa-solid fa-thumbs-up"></i>
-                        <span>Like</span>
-                    </button>
-                    <button class="reply btn btn-dark">
-                        Replies
-                        <span class="bg-light text-dark">1</span>
-                    </button>
-                </div>
-                <hr class="my-5">
-
-                <div class="comments row">
-                    <div class="col-2">
-                        <img class="img-fluid" src="./assets/img/blog/avatar_smoke.jpg"/>
-                    </div>
-                    <div class="col-4 my-1 ">
-                        <h4>George<span class="text-secondary">May 3, 2015, 6:32 PM</span></h4>
-                        <p>Great blog post! Following</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <!-- about -->
-                <div class="m-3 about">
-                    <img class="img-fluid" src="./assets/img/avatar_girl2.jpg" alt="">
-                    <div class="content">
-                        <h3 class="name">My name</h3>
-                        <p>
-                            Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you
-                        </p>
-                    </div>
-
-                </div>
-
-            <!-- posts -->
-            <div class="post">
-                <div class="m-3 sidebar__title">
-                    <h4 class="bg-black text-white p-3">Popular Posts</h4>
-                    <ul class="bg-white text-black">
-                        <li class="row p-3">
-                            <div class="col-3 p-0">
-                                <img class="img-fluid" src="./assets/img/post/avatar_smoke (1).jpg">
-                            </div>
-                            <div class="col-9">
-                                <span class="p-0">Denim</span>
-                                <p class="m-0">Sed mattis nunc</p>
-                            </div>
-                        </li>
-                        <li class="row p-3 ">
-                            <div class="col-3 p-0">
-                                <img class="img-fluid" src="./assets/img/post/avatar_smoke (1).jpg">
-                            </div>
-                            <div class="col-9">
-                                <span class="p-0">Denim</span>
-                                <p class="m-0">Sed mattis nunc</p>
-                            </div>
-                        </li>
-                        <li class="row p-3">
-                            <div class="col-3 p-0">
-                                <img class="img-fluid" src="./assets/img/post/avatar_smoke (1).jpg">
-                            </div>
-                            <div class="col-9">
-                                <span class="p-0">Denim</span>
-                                <p class="m-0">Sed mattis nunc</p>
-                            </div>
-                        </li>
-                        <li class="row p-3">
-                            <div class="col-3 p-0">
-                                <img class="img-fluid" src="./assets/img/post/avatar_smoke (1).jpg">
-                            </div>
-                            <div class="col-9">
-                                <span class="p-0">Denim</span>
-                                <p class="m-0">Sed mattis nunc</p>
-                            </div>
-                        </li>
-                     
-                    </ul>
-                </div>
-            </div>
-            <!-- advertise -->
-            <div class="advertise">
-                <div class="m-3 sidebar__title">
-                    <h4 class="bg-black text-white p-3">Advertise</h4>
-                    <div class="advertise-body  d-flex ">
-                        <div class="m-3 advertise-content text-center align-middle ">
-                           Your Ad here
+                    <div class="comments row">
+                        <div class="col-12 col-sm-2">
+                            <img class="img-fluid" src="./assets/img/blog/avatar_smoke.jpg"/>
+                        </div>
+                        <div class="col-12 col-sm-10 ">
+                            <h4>George<span class="text-secondary">May 3, 2015, 6:32 PM</span></h4>
+                            <p>Great blog post! Following</p>
                         </div>
                     </div>
-            </div>
+                </div>
+                <div class="blog bg-light px-3 py-2 m-3">
+                    <h3 class="fw-normal my-2 text-center">TITLE HEADING</h3>
+                    <h3 class="fw-normal my-2 text-center">Title description, <span class="text-secondary opaction-75"> May 2, 2016</span></h3>
+                    <img class="py-3" src="./assets/img/blog/girl_hat.jpg" class="img-fluid py-3" style="width: 100%;" alt="blog-1"> 
+                    <p class="my-3"><b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    <p class="my-3">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
+                    <div class="blog-action d-flex justify-content-between my-3">
+                        <button class="likeBtn btn btn-outline-secondary" >
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </button>
+                        <button class="reply btn btn-dark">
+                            <span class="me-2">Replies</span>
+                            <span class="bg-light text-dark px-2">1</span>
+                        </button>
+                    </div>
+                    <hr class="my-5">
 
-            <!-- Tags -->
-            <div class="tag">
-                <div class="m-3 sidebar__title">
-                    <h4 class="bg-black text-white p-3">Tags</h4>
-                    <div class="tag__content bg-white p-3">
-                        <span class="bg-black text-white">Fashion</span>
-                        <span class=" mb-3 ">New York</span>
-                        <span class=" mb-3 ">New York</span>
-                        <span class=" mb-3 ">New York</span>
-                        <span class=" mb-3 ">New York</span>
-                        <span class=" mb-3 ">New York</span>
-                        <span class=" mb-3 ">New York</span>
+                    <div class="comments row">
+                        <div class="col-12 col-sm-2">
+                            <img class="img-fluid" src="./assets/img/blog/avatar_smoke.jpg"/>
+                        </div>
+                        <div class="col-12 col-sm-10 ">
+                            <h4>George<span class="text-secondary">May 3, 2015, 6:32 PM</span></h4>
+                            <p>Great blog post! Following</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog bg-light px-3 py-2 m-3">
+                    <h3 class="fw-normal my-2 text-center">TITLE HEADING</h3>
+                    <h3 class="fw-normal my-2 text-center">Title description, <span class="text-secondary opaction-75"> May 2, 2016</span></h3>
+                    <img class="py-3" src="./assets/img/blog/girl_hat.jpg" class="img-fluid py-3" style="width: 100%;" alt="blog-1"> 
+                    <p class="my-3"><b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    <p class="my-3">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
+                    <div class="blog-action d-flex justify-content-between my-3">
+                        <button class="likeBtn btn btn-outline-secondary" >
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </button>
+                        <button class="reply btn btn-dark">
+                            <span class="me-2">Replies</span>
+                            <span class="bg-light text-dark px-2">1</span>
+                        </button>
+                    </div>
+                    <hr class="my-5">
+
+                    <div class="comments row">
+                        <div class="col-12 col-sm-2">
+                            <img class="img-fluid" src="./assets/img/blog/avatar_smoke.jpg"/>
+                        </div>
+                        <div class="col-12 col-sm-10 ">
+                            <h4>George<span class="text-secondary">May 3, 2015, 6:32 PM</span></h4>
+                            <p>Great blog post! Following</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col-12 col-lg-4">
+                <aside class="m-3">
+                    <!-- about -->
+                    <div class="sidebar-items">
+                        <img class="img-fluid" src="./assets/img/avatar_girl2.jpg" alt="blog-2">
+                        <div class="content bg-dark px-3">
+                            <h4 class="text-light py-2 mb-0">My name</h4>
+                            <p  class="text-light py-2 mb-0">
+                                Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you
+                            </p>
+                        </div>
+                    </div>
+            <hr class="my-4">
+                <!-- posts -->
+                    <div class="sidebar-items">
+                        <h4 class="bg-dark p-3 text-light mb-0">Popular Posts</h4>
+                        <ul class="bg-white popular-posts">
+                            <li class="row border-bottom">
+                                <div class="col-3">
+                                    <img src="./assets/img/post/avatar_smoke (1).jpg">
+                                </div>
+                                <div class="col-6">
+                                    <h5>Denim</h5>
+                                    <p>Sed mattis nunc</p>
+                                </div>
+                            </li>
+                            <li class="row border-bottom">
+                                <div class="col-3">
+                                    <img src="./assets/img/post/avatar_smoke (1).jpg">
+                                </div>
+                                <div class="col-6">
+                                    <h5>Denim</h5>
+                                    <p>Sed mattis nunc</p>
+                                </div>
+                            </li>
+                            <li class="row border-bottom">
+                                <div class="col-3">
+                                    <img src="./assets/img/post/avatar_smoke (1).jpg">
+                                </div>
+                                <div class="col-6">
+                                    <h5>Denim</h5>
+                                    <p>Sed mattis nunc</p>
+                                </div>
+                            </li>
+                            <li class="row border-bottom">
+                                <div class="col-3">
+                                    <img src="./assets/img/post/avatar_smoke (1).jpg">
+                                </div>
+                                <div class="col-6">
+                                    <h5>Denim</h5>
+                                    <p>Sed mattis nunc</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                <hr class="my-4">
+                <!-- advertise -->
+                <div class="sidebar-items">
+                    <h4 class="bg-black text-white p-3">Advertise</h4>
+                    <div class="advertise-body d-flex p-3 bg-white">
+                        <div class="advertise-content d-flex align-items-center justify-content-center ">
+                        Your Ad here
+                        </div>
+                    </div>
+                </div>
 
-               <!-- Inspiration -->
-            <div class="inspiration">
-                <div class="m-3 sidebar__title">
+                <hr class="my-4">
+
+                <!-- Tags -->
+                <div class="sidebar-items">
+                    <h4 class="bg-black text-white p-3">Tags</h4>
+                    <div class="tag__content bg-white p-3">
+                        <span class="d-inline-block p-2 bg-dark text-light mb-3">Fashion</span>
+                        <span class="d-inline-block p-2 mb-3">New York</span>
+                        <span class="d-inline-block p-2 mb-3">Lon Don</span>
+                        <span class="d-inline-block p-2 mb-3">HCMC</span>
+                        <span class="d-inline-block p-2 mb-3">New York</span>
+                        <span class="d-inline-block p-2 mb-3">New York</span>
+                        <span class="d-inline-block p-2 mb-3">New York</span>
+                        <span class="d-inline-block p-2 mb-3">New York</span>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <!-- Inspiration -->
+                <div class="sidebar-items">
                     <h4 class="bg-black text-white p-3">Inspiration</h4>
-                    <div class="inspiration__content bg-white p-3">
-                        <div class="row my-3">
-                            <div class="col-6 px-2">
+                    <div class="inspiration__content bg-white p-3 container-fluid">
+                        <div class="row">
+                            <div class="col-6 mb-3">
                                 <img class="img-fluid" src="./assets/img/inspiration/jeans.jpg">
                             </div>
-                            <div class="col-6 px-2">
+                            <div class="col-6 mb-3">
                                 <img class="img-fluid" src="./assets/img/inspiration/avatar_hat.jpg">
                             </div>
                         </div>
-                        <div class="row my-3">
-                            <div class="col-6 px-2">
+                        <div class="row ">
+                            <div class="col-6">
                                 <img class="img-fluid" src="./assets/img/inspiration/team1.jpg">
                             </div>
-                            <div class="col-6 px-2">
+                            <div class="col-6">
                                 <img class="img-fluid" src="./assets/img/inspiration/team4.jpg">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Follow me -->
-            <div class="followMe">
-                <div class="m-3 sidebar__title">
+                <hr class="my-4">
+                <!-- Follow me -->
+                <div class="sidebar-items">
                     <h4 class="bg-black text-white p-3">Follow me</h4>
                     <div class="followMe__content bg-white p-3">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-snapchat"></i>
-                        <i class="fa-brands fa-pinterest"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-linkedin"></i>
+                        <ul class="d-flex gap-3 p-3">
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-square-snapchat"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-discord"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
 
-            <!-- Subscribe -->
-            <div class="Subscribe__Sidebar">
-                <div class="m-3 sidebar__title">
+                
+                <hr class="my-4">
+                <!-- Subscribe -->
+                <div class="sidebar-items">
                     <h4 class="bg-black text-white p-3">Subscribe</h4>
                     <div class="subscribe__content bg-white p-3 ">
                         <p class="my-3">Enter your e-mail below and get notified on the latest blog posts.</p>
-                        <input class="p-2 container-fluid" type="email" placeholder="Enter e-mail" >
-                        <button class="bg-danger text-white text-center container-fluid my-2 "  type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe</button>
+                        <input class="form-control" type="email" placeholder="Enter e-mail" >
+                        <button class="container-fluid mt-1 bg-danger text-white subscibeBtn"  type="button"  data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</button>
                     </div>  
-
-            </div>
-
+                </div>
+            </aside>
+        </div>
     </div>
+</div>
 
-
+<!-- Footer -->
+<footer class="bg-secondary p-5">
+    <button class="btn btn-dark">
+        <a href="#" class="text-light text-decoration-none">
+            <i class="fa-solid fa-arrow-up"></i> To the top
+        </a>
+    </button>
+    <p class="m-0 pt-5">Powered by <a href="">w3.css</a></p>
+</footer>
 </body>
 
 
