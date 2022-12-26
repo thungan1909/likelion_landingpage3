@@ -81,3 +81,40 @@ header h1 {
 .comments span{
     font-size: 15px;
 }
+
+
+/* About */
+
+.about .content {
+   padding: 0.15px 16px;
+   color: #FFF;
+   background-color: #000;
+}
+.about .name {
+   margin: 10px 0px;
+
+}
+.about p {
+   margin: 15px 0px;
+}
+
+
+.advertise-body{
+   height: 200px;
+   background-color: #FFF;
+}
+.advertise-content{
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.tag__content span+span {
+   background-color: #f1f1f1;
+   font-size: 12px;
+}
+
+.followMe__content i {
+   font-size: 21px;
+   cursor: pointer;
+
+}
