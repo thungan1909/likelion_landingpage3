@@ -9,11 +9,18 @@ _likeBtn.forEach( (btn) => {
     });
 })
 
-const comments = document.querySelectorAll(".comments");
-const replies = document.querySelectorAll(".reply");
+const repliesBtn = document.querySelectorAll(".reply");
 
-replies.forEach((btn, index) => {
+// Với mỗi nút Reply 
+repliesBtn.forEach((btn, index) => {
     btn.addEventListener("click", function() {
-        comments[index].classList.toggle("d-none");
+    
+        // Lấy ra tất cả comment của bài blog tương ứng
+        // index bắt đầu từ 0 => index + 1
+        const comments = document.querySelectorAll(".comments" + (index + 1) );
+        for (const cmt of comments) {
+            cmt.classList.toggle("d-none");
+        }
     });
+
 });
